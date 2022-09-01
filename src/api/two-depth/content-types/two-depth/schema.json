@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "two_depths",
+  "info": {
+    "singularName": "two-depth",
+    "pluralName": "two-depths",
+    "displayName": "Two depth",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "two_depth": {
+      "type": "string"
+    },
+    "one_depth": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::one-depth.one-depth",
+      "inversedBy": "two_depths"
+    },
+    "content": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::content.content",
+      "inversedBy": "two_depth"
+    }
+  }
+}

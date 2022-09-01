@@ -14,10 +14,10 @@
     "content": {
       "type": "richtext"
     },
-    "title": {
+    "two_depth": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::title.title",
+      "target": "api::two-depth.two-depth",
       "inversedBy": "content"
     }
   }

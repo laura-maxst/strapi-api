@@ -14,18 +14,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "one_depth": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::one-depth.one-depth",
-      "inversedBy": "titles"
-    },
-    "content": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::content.content",
-      "inversedBy": "title"
     }
   }
 }
