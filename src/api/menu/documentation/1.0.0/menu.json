@@ -1,5 +1,5 @@
 {
-  "/titles": {
+  "/menus": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TitleListResponse"
+                "$ref": "#/components/schemas/MenuListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Title"
+        "Menu"
       ],
       "parameters": [
         {
@@ -148,7 +148,7 @@
           }
         }
       ],
-      "operationId": "get/titles"
+      "operationId": "get/menus"
     },
     "post": {
       "responses": {
@@ -157,7 +157,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TitleResponse"
+                "$ref": "#/components/schemas/MenuResponse"
               }
             }
           }
@@ -214,23 +214,23 @@
         }
       },
       "tags": [
-        "Title"
+        "Menu"
       ],
       "parameters": [],
-      "operationId": "post/titles",
+      "operationId": "post/menus",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/TitleRequest"
+              "$ref": "#/components/schemas/MenuRequest"
             }
           }
         }
       }
     }
   },
-  "/titles/{id}": {
+  "/menus/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -238,7 +238,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TitleResponse"
+                "$ref": "#/components/schemas/MenuResponse"
               }
             }
           }
@@ -295,7 +295,7 @@
         }
       },
       "tags": [
-        "Title"
+        "Menu"
       ],
       "parameters": [
         {
@@ -309,7 +309,7 @@
           }
         }
       ],
-      "operationId": "get/titles/{id}"
+      "operationId": "get/menus/{id}"
     },
     "put": {
       "responses": {
@@ -318,7 +318,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/TitleResponse"
+                "$ref": "#/components/schemas/MenuResponse"
               }
             }
           }
@@ -375,7 +375,7 @@
         }
       },
       "tags": [
-        "Title"
+        "Menu"
       ],
       "parameters": [
         {
@@ -389,13 +389,13 @@
           }
         }
       ],
-      "operationId": "put/titles/{id}",
+      "operationId": "put/menus/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/TitleRequest"
+              "$ref": "#/components/schemas/MenuRequest"
             }
           }
         }
@@ -466,7 +466,7 @@
         }
       },
       "tags": [
-        "Title"
+        "Menu"
       ],
       "parameters": [
         {
@@ -480,7 +480,7 @@
           }
         }
       ],
-      "operationId": "delete/titles/{id}"
+      "operationId": "delete/menus/{id}"
     }
   }
 }

@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "titles",
+  "collectionName": "menus",
   "info": {
-    "singularName": "title",
-    "pluralName": "titles",
-    "displayName": "title",
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "menu",
     "description": ""
   },
   "options": {
@@ -12,8 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
+    "menu": {
+      "type": "json"
     }
   }
 }
