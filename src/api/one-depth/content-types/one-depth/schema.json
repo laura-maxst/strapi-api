@@ -4,7 +4,8 @@
   "info": {
     "singularName": "one-depth",
     "pluralName": "one-depths",
-    "displayName": "one depth"
+    "displayName": "one depth",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,10 +15,10 @@
     "one_depth": {
       "type": "string"
     },
-    "titles": {
+    "two_depths": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::title.title",
+      "target": "api::two-depth.two-depth",
       "mappedBy": "one_depth"
     }
   }

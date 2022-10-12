@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "titles",
+  "collectionName": "two_depths",
   "info": {
-    "singularName": "title",
-    "pluralName": "titles",
-    "displayName": "title",
+    "singularName": "two-depth",
+    "pluralName": "two-depths",
+    "displayName": "Two depth",
     "description": ""
   },
   "options": {
@@ -12,20 +12,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "two_depth": {
       "type": "string"
     },
     "one_depth": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::one-depth.one-depth",
-      "inversedBy": "titles"
+      "inversedBy": "two_depths"
     },
     "content": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::content.content",
-      "inversedBy": "title"
+      "inversedBy": "two_depth"
     }
   }
 }
