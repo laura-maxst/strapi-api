@@ -9,7 +9,6 @@
 //     useNullAsDefault: true,
 //   },
 // });
-
 module.exports = ({ env }) => ({
   connection: {
     client: "postgres",
